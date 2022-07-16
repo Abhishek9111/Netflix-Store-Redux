@@ -17,6 +17,7 @@ import propTypes from 'propTypes';
 import shortid from 'shortid';
 import { addSeason } from '../action/list'
 import { connect } from 'react-redux';
+import Home from './Home';
 
 
 const Add = ({navigation, addSeason}) => {
@@ -40,6 +41,8 @@ const Add = ({navigation, addSeason}) => {
         }
 
         addSeason(seasonToAdd)
+
+        navigation.navigate('Home')
 
     } catch (error) {
         console.error(error);

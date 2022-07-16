@@ -20,7 +20,7 @@ const Stack = createStackNavigator();
 const App = () => {
 
 
-  return (    
+  return (     
   <Provider store = {store}>
   <StatusBar backgroundColor="#0f4c75" /><NavigationContainer>
       <Stack.Navigator
